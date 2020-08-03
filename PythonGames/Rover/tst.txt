@@ -1,0 +1,15 @@
+START XXX file
+SCAN shade
+
+
+
+MOVE 5 N
+
+MOVE 8 S
+
+SCAN elevation
+
+Finish
+
+Quit
+
