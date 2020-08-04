@@ -1,0 +1,12 @@
+S,x:F S,y:F S,z:F S,1:F S,2:F S,3:F S,4:F S,5:F S,6:F S,7:F S,8:F S,9:F S,let:F S,while:F S,;:F S,(:F S,$:F S,else:F
+F,x:LF F,y:LF F,z:LF F,1:LF F,2:LF F,3:LF F,4:LF F,5:LF F,6:LF F,7:LF F,8:LF F,9:LF F,let:LF F,while:LF F,;:epsilon F,(:LF F,$:epsilon F,else:epsilon
+L,x:E; L,y:E; L,z:E; L,1:E; L,2:E; L,3:E; L,4:E; L,5:E; L,6:E; L,7:E; L,8:E; L,9:E; L,let:A; L,while:C; L,(:E;
+E,x:V E,y:V E,z:V E,1:N E,2:N E,3:N E,4:N E,5:N E,6:N E,7:N E,8:N E,9:N E,(:(EBE)
+A,let:letV=E
+C,while:whileEdoSH
+H,else:elseS H,;:epsilon
+B,+:+ B,-:- B,*:* B,>:>
+V,x:x V,y:y V,z:z
+N,1:DG N,2:DG N,3:DG N,4:DG N,5:DG N,6:DG N,7:DG N,8:DG N,9:DG
+G,0:0G G,1:DG G,2:DG G,3:DG G,4:DG G,5:DG G,6:DG G,7:DG G,8:DG G,9:DG G,do:epsilon G,;:epsilon G,):epsilon G,+:epsilon G,-:epsilon G,*:epsilon G,>:epsilon
+D,1:1 D,2:2 D,3:3 D,4:4 D,5:5 D,6:6 D,7:7 D,8:8 D,9:9

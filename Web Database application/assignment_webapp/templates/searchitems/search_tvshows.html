@@ -1,0 +1,33 @@
+{% include 'top.html' %}
+    <div class="content">
+        <h1 class="title">Search TV Shows</h1>
+
+        <form class="Search" method="POST" action="{{url_for('search_tvshows')}}">
+            <input type="text" name="searchterm" placeholder="TV Show" autofocus required>
+            <button class="flat" type="submit">Search</button>
+        </form>
+            {% if tvshows | length > 0 %}
+                <!-- All TV Shows -->
+                <table class="styled">
+                    <thead>
+                        <tr>
+                            <td>TV Show ID</td>
+                            <td>TV Show Name</td>
+                            <td>TV Show Episode Count</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for instance in tvshows %}
+                            <!-- Each row is a link to each individual tvshow page -->
+                            <tr class="clickable-tr" data-href="{{ url_for('single_tvshow', tvshow_id=instance.tvshow_id)}}">
+                                <td style="text-align: center">{{ instance.tvshow_id }}</td>
+                                <td>{{instance.tvshow_title}}</td>
+                                <td>{{instance.count}}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+        
+                </table>
+            {% endif %}
+    </div>
+{% include 'bottom.html'%}

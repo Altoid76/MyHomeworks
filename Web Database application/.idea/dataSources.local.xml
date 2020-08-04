@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="y19s2i2120_swan2742@soit-db-pro-2.ucc.usyd.edu.au" uuid="1216376a-4c69-4142-8afc-4b178ed28874">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>y19s2i2129_swan2742</user-name>
+    </data-source>
+  </component>
+</project>
